@@ -1,0 +1,23 @@
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Docker volumes locais
+volumes/
+
+# Chaves e certificados
+*.pem
+*.key
+*.cert
+
+# Node modules
+node_modules/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
