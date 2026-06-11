@@ -1,53 +1,36 @@
 # TLM AI Ecosystem
 
-> Infraestrutura de IA gerenciada para automações inteligentes, agentes autônomos e integrações com WhatsApp, CRM e APIs.
+> Infraestrutura de IA gerenciada para automação de negócios, desenvolvida e mantida pela [TLM Tecnologia](https://tlmtecnologia.com).
 
-**Desenvolvido e mantido por [Thiago Martiniano](https://github.com/tmartiniano)**
+## O que é este projeto
 
----
+Ecossistema completo de agentes de IA, automações e integrações construído sobre infraestrutura própria em VPS, projetado para ser oferecido como serviço recorrente em três planos distintos conforme a maturidade técnica do cliente.
 
-## Sobre o Projeto
-
-O TLM AI Ecosystem é uma infraestrutura completa de IA construída para entregar automações inteligentes como serviço recorrente. O ecossistema combina agentes de IA, orquestração de fluxos, RAG com embeddings e integrações com WhatsApp, CRM e APIs externas.
-
----
-
-## Stack Principal
+## Stack principal
 
 | Camada | Tecnologia |
 |---|---|
-| Agentes de IA | Claude Code + OpenAI |
-| Banco de Dados + Vetores | Supabase + pgvector |
-| Orquestração | n8n (self-hosted) |
+| Orquestração | n8n self-hosted |
 | WhatsApp | Evolution API |
-| Contexto Persistente | MCP |
-| Infraestrutura | Docker + VPS Ubuntu |
-| Proxy Reverso | Nginx + SSL |
+| Banco de dados | Supabase (PostgreSQL + pgvector) |
+| Agentes de IA | Claude + OpenAI |
+| Memória e RAG | Embeddings + Supabase pgvector |
+| Infraestrutura | Docker + Nginx + Contabo VPS |
+| Contexto persistente | MCP (Model Context Protocol) |
 
----
+## Planos disponíveis
 
-## Planos Disponíveis
+**Base:** agente único pré-configurado para clientes em fase inicial de adoção de IA.
 
-### Base
-Para quem está começando. Agente único pré-configurado com caso de uso específico, infraestrutura compartilhada e suporte por ticket.
+**Pro:** ambiente semi-dedicado com múltiplos agentes integrados, ideal para quem já opera com automações e quer escalar.
 
-### Pro
-Para quem já opera com automações. Ambiente semi-dedicado com múltiplos agentes integrados, RAG, CRM e SLA de suporte definido.
+**Premium:** infraestrutura dedicada com multiagentes orquestrados, RAG, dashboards e parceria técnica contínua.
 
-### Premium
-Para quem quer o potencial máximo. Ambiente dedicado, multiagentes orquestrados, memória de longo prazo, dashboards e parceria técnica mensal.
+## Estrutura do repositório
+tlm-ai-ecosystem/ ├── docs/ # Documentação técnica de cada módulo ├── infra/ # Docker Compose e configurações de infraestrutura ├── agents/ # Código dos agentes de IA ├── workflows/ # Exports dos fluxos do n8n └── prompts/ # Biblioteca de prompts organizados por caso de uso
 
----
+## Autor
 
-## Estrutura do Repositório
-tlm-ai-ecosystem/ ├── docs/ # Documentação de cada etapa ├── infra/ # Docker Compose e configurações ├── agents/ # Código dos agentes de IA ├── workflows/ # Exports dos fluxos n8n └── prompts/ # Biblioteca de prompts
-
----
-
-## Documentação
-
-Cada etapa da construção está documentada na pasta `/docs`, em ordem de execução.
-
----
-
-* TLM AI Ecosystem · 2026*
+**Thiago Martiniano**
+TLM Tecnologia · [app.tlmtecnologia.com](https://app.tlmtecnologia.com)
+GitHub: [@tmartiniano](https://github.com/tmartiniano)
